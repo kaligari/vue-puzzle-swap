@@ -1,6 +1,6 @@
 # Vue Game - Puzzle Swap
 
-One Paragraph of project description goes here
+Simple VueJS puzzle game. Demo You can see here: [Vue Puzzle Swap Demo](http://kaligari.ki.usermd.net/vue-puzzle-swap/)
 
 ## Getting Started
 
