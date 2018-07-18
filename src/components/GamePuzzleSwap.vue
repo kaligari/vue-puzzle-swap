@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="column">
-                <img :src="image" alt="" :style="{width:width+'px',height:height+'px'}">
+                <img class="preview" :src="image" alt="" :style="{width:width+'px',height:height+'px'}">
             </div>
         </div>
         <div class="columns" id="game-puzzle">
@@ -23,26 +23,9 @@
                     <div class="modal-background"></div>
                     <div class="modal-content">
                         <div class="box has-text-centered">
-                            <p>Twój czas to {{ time }} s.</p><br />
-                            <p>Udostępnij swój wynik:</p><br />
-                            <social-sharing :url="mainUrl+'?t='+time" inline-template>
-                                <div>
-                                    <network network="facebook">
-                                        <button type="button" class="button is-light"><span class="icon"><i class="fa fa-facebook"></i></span><span>Facebook</span></button>
-                                    </network>
-                                    <network network="googleplus">
-                                        <button type="button" class="button is-light"><span class="icon"><i class="fa fa-google-plus"></i></span><span>Google +</span></button>
-                                    </network>
-                                    <network network="twitter">
-                                        <button type="button" class="button is-light"><span class="icon"><i class="fa fa-twitter"></i></span><span>Twitter</span></button>
-                                    </network>
-                                    <network network="email">
-                                        <button type="button" class="button is-light"><span class="icon"><i class="fa fa-envelope"></i></span><span>Email</span></button>
-                                    </network>
-                                </div>
-                            </social-sharing>
+                            <p>Your time is {{ time }} s.</p><br />                            
                             <br />
-                            <button type="button" class="button is-primary" @click="modal = false">Zamknij</button>
+                            <button type="button" class="button is-primary" @click="modal = false">Close</button>
                         </div>
                     </div>
                     <button class="modal-close is-large" aria-label="close" @click="modal = false"></button>
@@ -53,12 +36,8 @@
 </template>
 
 <script>
-import SocialSharing from 'vue-social-sharing';
 export default {
     name: 'GamePuzzleSwap',
-    components: {
-        'social-sharing': SocialSharing,
-    },
     data: function(){
         return{
             time: 0,
@@ -72,10 +51,6 @@ export default {
         }
     },
     props: {
-        mainUrl: {
-            type: String,
-            required: true,
-        },
         image: {
             type: String,
             required: true,
@@ -217,12 +192,12 @@ export default {
 }
 #game-puzzle-swap{
     text-align: center;
-    img{
+    .preview{
         display: inline-block;
+        border:1px solid #000;
     }
     .puzzle{
         display: inline-block;
-        border:1px solid #000;
         background-position: -1000px -1000px;
         background-repeat: no-repeat;
         &.done{
