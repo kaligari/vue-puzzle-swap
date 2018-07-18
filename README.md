@@ -27,7 +27,3 @@ Then you can run files in dist/ folder.
 ## Authors
 
 * **Sebastian Kopeć**
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
