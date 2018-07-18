@@ -10,6 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 git clone https://github.com/kaligari/vue-puzzle-swap.git
+cd vue-puzzle-swap
 npm install
 npm run dev
 ```
