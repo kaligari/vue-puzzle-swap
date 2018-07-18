@@ -1,0 +1,23 @@
+{
+  "name": "vue-puzzle-swap",
+  "version": "1.0.0",
+  "description": "Simple VueJS game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://repo7.mydevil.net/git/priv/ki/vue-puzzle-swap/"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "puzzle"
+  ],
+  "author": "Sebastian Kopeć",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
