@@ -171,7 +171,7 @@ export default {
         // rozpocznij liczenie czasu
         this.timeInterval = setInterval(()=>{
             this.time++;
-        },1500);
+        },1000);
         // set initial game width and height
         if((window.innerWidth || document.body.clientWidth) < 768) {
             this.width = 300;
