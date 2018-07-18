@@ -23,7 +23,7 @@
                     <div class="modal-background"></div>
                     <div class="modal-content">
                         <div class="box has-text-centered">
-                            <p>Your time is {{ time }} s.</p><br />                            
+                            <p>Your time is {{ time }} s.</p><br />
                             <br />
                             <button type="button" class="button is-primary" @click="modal = false">Close</button>
                         </div>
@@ -202,6 +202,7 @@ export default {
         background-repeat: no-repeat;
         &.done{
             background-position:0 0;
+            border: 1px solid #000;
             .row{
                 opacity: 0;
             }
