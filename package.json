@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://repo7.mydevil.net/git/priv/ki/vue-puzzle-swap/"
+    "url": "https://github.com/kaligari/vue-puzzle-swap.git"
   },
   "keywords": [
     "vuejs",
